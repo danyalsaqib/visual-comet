@@ -33,7 +33,8 @@ from torch.utils.data import DataLoader
 from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig
 
 print("Changing CWD")
-os.chdir('/content/drive/My Drive/VisualComet/visual-comet')
+os.chdir('/content/drive/My Drive/VisualComet/visual-comet/')
+print("Current Working Directory: ", os.getcwd())
 
 from dataloaders.tokenizers import VisualCometTokenizer
 from dataloaders.vcg_generation import VCGGenDataset
