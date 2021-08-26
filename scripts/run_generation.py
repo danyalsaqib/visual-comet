@@ -35,6 +35,7 @@ from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConf
 print("Changing CWD")
 os.chdir('/content/drive/My Drive/VisualComet/visual-comet/')
 print("Current Working Directory: ", os.getcwd())
+print(os.listdir(os.getcwd()))
 
 from dataloaders.tokenizers import VisualCometTokenizer
 from dataloaders.vcg_generation import VCGGenDataset
