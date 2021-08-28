@@ -30,12 +30,9 @@ import tqdm
 from torch.utils.data import SequentialSampler
 from torch.utils.data import DataLoader
 
-from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig
+os.chdir('/content/drive/My Drive/VisualComet/visual-comet')
 
-print("Changing CWD")
-os.chdir('/content/drive/My Drive/VisualComet/visual-comet/')
-print("Current Working Directory: ", os.getcwd())
-print(os.listdir(os.getcwd()))
+from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig
 
 from dataloaders.tokenizers import VisualCometTokenizer
 from dataloaders.vcg_generation import VCGGenDataset
