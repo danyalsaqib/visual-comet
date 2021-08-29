@@ -30,8 +30,6 @@ import tqdm
 from torch.utils.data import SequentialSampler
 from torch.utils.data import DataLoader
 
-os.chdir('/content/drive/My Drive/VisualComet/visual-comet')
-
 from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig
 
 from dataloaders.tokenizers import VisualCometTokenizer
